@@ -12,6 +12,7 @@ def directors_totals(nds)
   while row_index < nds.length do
     direc_total = gross_for_director(nds[row_index])
     row_index+=1
+    result[nds[row_index][:name]] = direc_total
   end
   return result
 end
