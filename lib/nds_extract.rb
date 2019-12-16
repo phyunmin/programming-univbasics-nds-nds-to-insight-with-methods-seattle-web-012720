@@ -9,11 +9,10 @@ def directors_totals(nds)
   pp nds[0][:name]
   result = {}
   row_index=0
-  direc_total = 0
+
   while row_index < nds.length do
-    direc_total = gross_for_director(nds[row_index])
+    result[nds[row_index][:name]] = gross_for_director(nds[row_index])
     row_index+=1
-    result[nds[row_index][:name]] = direc_total
   end
   return result
 end
