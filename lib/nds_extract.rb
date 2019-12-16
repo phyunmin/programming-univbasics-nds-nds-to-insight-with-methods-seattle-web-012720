@@ -6,7 +6,7 @@ require 'directors_database'
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
-  pp nds[0][:name]
+#  pp nds[0][:name]
   result = {}
   row_index=0
 
